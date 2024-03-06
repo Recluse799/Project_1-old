@@ -28,8 +28,8 @@ int main()
     double SalesTax; //Initialize double SalesTax
     double PercentMarkup; //Initialize double PercentMarkup
     double FinalCost; //Initialize double Final
-    double Itemtax;
-    double TotalCost;
+    double Itemtax; //Initialize double ItemTax
+    double TotalCost; //Initialize double ItemTax
     
 
     cout << "Enter in Original price of item: ";  // to check amount 
