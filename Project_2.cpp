@@ -16,43 +16,42 @@ using namespace std;
 int main()
 {
     
-    /*
-      Immanuel Braxton
+    /*Immanuel Braxton
       2/25/2024
       Explain  CODE
       This program will calculate and show the mark up, original price and tax rates of inputted items.
     */
     
 
-    double OrigPrice; //Initialize original price as OrigPrice
-    double SalesTax; //Initialize double SalesTax
-    double PercentMarkup; //Initialize double PercentMarkup
-    double FinalCost; //Initialize double Final
+    double OrigPrice; //Initialize original price as Origprice
+    double Salestax; //Initialize double Salestax
+    double Percent_markup; //Initialize double Percent_markup
+    double Final_cost;
     double Itemtax;
-    double TotalCost;
+    double Total_cost;
     
 
     cout << "Enter in Original price of item: ";  // to check amount 
     cin >> OrigPrice;
     cout << "Enter percent markup : ";  // to check amount 
-    cin >> PercentMarkup;
+    cin >> Percent_markup;
     cout << "Enter Sales tax : ";  // to check amount 
-    cin >> SalesTax;
+    cin >> Salestax;
 
 
-    double MarkupPrice = OrigPrice * PercentMarkup;
-    FinalCost = OrigPrice + MarkupPrice;
+    double MarkupPrice = OrigPrice * Percent_markup;
+    Final_cost = OrigPrice + MarkupPrice;
 
     
-    Itemtax = FinalCost * SalesTax;
-    TotalCost = FinalCost + Itemtax;
+    Itemtax = Final_cost * Salestax;
+    Total_cost = Final_cost + Itemtax;
 
 
     cout << "Original price of item: " << fixed << showpoint << setprecision(2) << setw(6) << OrigPrice << endl;  // to check amount 
-    cout << "Percent mark up is: " << fixed << showpoint << setprecision(2) << setw(10) << PercentMarkup << endl; // to check amount 
+    cout << "Percent mark up is: " << fixed << showpoint << setprecision(2) << setw(10) << Percent_markup << endl; // to check amount 
     cout << "Stores sell price is: " << fixed << showpoint << setprecision(2) << setw(10) << MarkupPrice << endl; // to check amount 
-    cout << "Amount of sales tax: " << fixed << showpoint << setprecision(2) << setw(10) << SalesTax << endl;  // to check amount 
-    cout << "Your total price is: " << fixed << showpoint << setprecision(2) << setw(10) << TotalCost << endl; //selling price +sales tax
+    cout << "Amount of sales tax: " << fixed << showpoint << setprecision(2) << setw(10) << Salestax << endl;  // to check amount 
+    cout << "Your total price is: " << fixed << showpoint << setprecision(2) << setw(10) << Total_cost << endl; //selling price +sales tax
     
     
     return  0;
